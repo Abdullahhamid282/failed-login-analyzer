@@ -94,6 +94,18 @@ Through this project I practiced:
 - Creating CSV investigation reports
 - Thinking about alerts as indicators requiring investigation
 
+
+Project Screenshots
+
+Detection Output
+
+![Detection Output](screenshots/detection-output.png)
+
+Investigation Report
+
+![Investigation Report](screenshots/investigation-report.png)
+
+
 Disclaimer
 
-This project uses synthetic log data and is intended for educational and defensive cybersecurity purposes.L
+This project uses synthetic log data and is intended for educational and defensive cybersecurity purposes.
