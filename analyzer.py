@@ -27,12 +27,3 @@ for ip, count in ip_counts.items():
 
     if status == "SUSPICIOUS":
         print("ALERT: Possible brute-force activity detected!")
-
-    if count >= 5:
-        status = "SUSPICIOUS"
-    else:
-        status = "NORMAL"
-
-    print(f"\nIP Address: {ip}")
-    print(f"Failed attempts: {count}")
-    print(f"Status: {status}")
