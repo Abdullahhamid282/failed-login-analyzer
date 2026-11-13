@@ -13,7 +13,15 @@ with open(log_file, "r") as file:
 
 ip_counts = Counter(failed_ips)
 
-print("=== Failed Login Analysis ===")
+print("=== SOC Authentication Analysis ===")
 
 for ip, count in ip_counts.items():
-    print(f"{ip}: {count} failed attempts")
+
+    if count >= 5:
+        status = "SUSPICIOUS"
+    else:
+        status = "NORMAL"
+
+    print(f"\nIP Address: {ip}")
+    print(f"Failed attempts: {count}")
+    print(f"Status: {status}")
